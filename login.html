@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Update & Submit Claim Summary</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url("CSS/index.css");
+  </style>
+</head>
+<body>
+  <div class="LoginHeader">
+    <h3>
+    CLAIM SUMMARY
+    </h3>
+  </div>
+  <div class="container">
+    <div class="card border-dark logincard mx-auto" style="max-width: 20rem;">
+        <div class="card-body text-dark">
+            <form class="loginform text-center" name="loginform" id="loginform" action="index.html" onsubmit="return validateloginform()">
+              
+              <p class="h4 mb-4">Sign in</p>
+              <input type="text" id="Username" name="Username" class="form-control mb-4" placeholder="Username"/>
+            
+              <input type="password" id="Password" name="Password" class="form-control mb-4" placeholder="Password"/>
+            
+              <div class="d-flex justify-content-around">
+                <div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember"/>
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                  </div>
+                </div>
+              </div>
+            
+              <button class="btn btn-outline-primary my-4" type="submit">Sign in</button>
+            </form>
+        </div>
+      </div>
+  </div>
+  <footer class="page-footer font-small bg-dark pt-2 static-bottom">
+    <div class="footer-copyright text-center py-2">
+      © 2020 Copyright
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/validations.js"></script>
+</body>
+
+</html>

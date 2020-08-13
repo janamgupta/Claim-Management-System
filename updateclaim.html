@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Update & Submit Claim Summary</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url("CSS/index.css");
+  </style>
+</head>
+<body>
+  <div class="header container-fluid">
+    <div class="row mx-auto">
+      <div class="col-md-9 col-lg-9"><h3 class="MainHead">CLAIM SUMMARY</h3></div>
+      <div class="col-md-3 col-lg-3"><h6 id="time" class="HeadTime"></h6></div>
+    </div>  
+  </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="viewclaim.html">View Claim</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="updateclaim.html">Update Claim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <p class="mr-5 pt-2 user">Welcome, Abc</p>
+          </li>
+          <li>
+            <a class="btn btn-outline-light mt-1" href="login.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5 mb-5">
+    <div class="card border-dark updateformCard mx-auto" style="max-width: 60rem;">
+      <div class="card-body text-dark">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h5>
+          UPDATE CALIM
+        </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form name="updateForm">
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label>Employee ID *</label>
+              <input type="text" class="form-control" value="1" disabled>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label>Employee Name *</label>
+              <input type="text" class="form-control" disabled value="ABC">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label>Claim Number *</label>
+              <input type="text" name="claimNumber" class="form-control" value="123-456-789">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label>Claim Type *</label>
+              <select class="form-control">
+                <option selected>Choose...</option>
+                <option>Submitted</option>
+                <option>Recieved</option>
+                <option>Pending</option>
+                <option>More Info Required</option>
+                <option>Rejected</option>
+                <option>Denied</option>
+                <option>Paid</option>
+              </select>
+            </div>
+          </div> 
+          <div class="form-row">  
+            <div class="form-group col-md-12">
+              <label>Claim Programs *</label>
+              <input type="text" name="claimProgram" class="form-control" value="Demo">
+            </div> 
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label>Claim Start Date *</label>
+              <input type="date" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label>Claim End Date *</label>
+              <input type="date" class="form-control">
+            </div>
+          </div>
+          
+        </form>
+        <div class="mt-4 text-center">
+          <a type="submit" class="btn btn-outline-primary mr-4 next" href="review.html" onclick="return validateUpdateForm()">Next</a>
+          <a class="btn btn-outline-danger cancel" href="viewclaim.html">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <footer class="page-footer font-small bg-dark pt-2 static-bottom">
+    
+    <div class="footer-copyright text-center py-2">
+      © 2020 Copyright
+    </div>
+
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/validations.js"></script>
+</body>
+
+</html>
